@@ -26,4 +26,9 @@
     label_smoothing_rate=0.
 
     bool_pseudo=1
-
+再往下定义了大量处理的函数
+然后通过下方代码进行训练、测试、生成输出
+    model,histories,probabilities=training()
+    y_pred=predict(model,probabilities)
+    sub('submission_p.csv')
+最后由模型自动生成伪标签，并再次训练、测试、生成输出
