@@ -27,7 +27,7 @@
 
     bool_pseudo=1
 再往下定义了大量处理的函数
-然后通过下方代码进行训练、测试、生成输出
+然后通过下方代码进行训练、测试、生成输出  
     model,histories,probabilities=training()
     y_pred=predict(model,probabilities)
     sub('submission_p.csv')
